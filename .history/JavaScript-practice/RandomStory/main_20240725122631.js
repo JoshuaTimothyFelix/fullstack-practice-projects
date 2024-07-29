@@ -37,8 +37,8 @@ function result() {
     if(document.getElementById("uk").checked) {
         const weight = Math.round(300 / 14);
         const temperature = Math.round((94 - 32) * 5 / 9);
-        randomStory = randomStory.replace('300 pounds', weight + 'stone');
-        randomStory = randomStory.replace('94 fahrenheit' , temperature + 'centigrade');
+        randomStory = randomStory.replace('300', weight);
+        randomStory = randomStory.replace('94', temperature);
         }
     
     story.textContent = randomStory;
