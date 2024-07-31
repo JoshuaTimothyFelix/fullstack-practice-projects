@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: n;
+            margin:15px 0px;
+        }
+        section {
+            padding: 60px 20px;
+            margin-top: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+        #output {
+            font-size: 20px;
+        }
+    </style>
+    <script src="Scripts/alphabetizeString.js"></script>
+</head>
+<body>
+
+    <nav>
+        <h1><center>Practice JavaScript</center></h1>
+        <br><br>
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+        <a href="#section4">Section 4</a>
+        <a href="#section5">Section 5</a>
+        <a href="#section6">Section 6</a>
+        <a href="#section7">Section 7</a>
+        <a href="#section8">Section 8</a>
+        <a href="#section9">Section 9</a>
+        <a href="#section10">Section 10</a>
+        <a href="#section11">Section 11</a>
+        <a href="#section12">Section 12</a>
+        <a href="#section13">Section 13</a>
+        <a href="#section14">Section 14</a>
+        <a href="#section15">Section 15</a>
+        <a href="#section16">Section 16</a>
+    </nav>
+    <br>
+
+    <section id="section1">
+        <h4>Use the for loop to output even numbers from 2 to 10</h4>
+        <div id="output1">
+            <button id="displayButton">Display Even Numbers</button>
+            
+            <script>
+                function displayEvenNumbers(){
+                    document.getElementById('output1').addEventListener('click',function(event){
+                        event.preventDefault();
+                    }
+                );
+                
+                    console.log("Output of even numbers from 2 to 10");
+                    for (let i = 2; i <= 10; i += 2) {
+                        outputDiv.innerText += i + '<br>';
+                    }
+                }
+            </script>
+        </div>
+    </section>
+
+    <section id="section2">
+        <h4>Write a loop which prompts for a number greater than 100</h4>
+        <div>
+            <button onclick="promptForNumber()">Enter Number</button>
+            <script src="Scripts/GreaterThan100.js"></script>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h4>Write the code which outputs prime numbers in the interval from 2 to n</h4>
+        <div id="primeNumbersOutput">
+            <!--document.writeln("Prime numbers in the interval from 2 to n, where n is %d",n);-->
+            <script>
+                let n =20;
+                document.writeln("Prime numbers in the interval from 2 to n, where n is %d",n);
+                //console.log("Prime numbers in the interval from 2 to n");
+                function printPrimes(n) {
+                    let output = "";
+                    for (let i = 2; i <= n; i++) {
+                        let isPrime = true;
+                        for (let j = 2; j < i; j++) {
+                            if (i % j === 0) {
+                                isPrime = false;
+                                break;
+                            }
+                        }
+                        if (isPrime) {
+                            output += i + ' ';    
+                        }
+                    }
+                    document.getElementById("primeNumbersOutput").innerText = output.trim();
+                }
+                printPrimes(n);
+            </script>
+        </div>
+    </section>
+    
+    <section id="section4">
+        <h4>Write a JavaScript program that reverses a number</h4>
+        <button onclick="reverseNumberScript()">Reverse Number</button>
+        <div id="reverseNumberOutput"></div>
+        <!--<script src="Scripts/reverseNumber.js"></script>-->
+    </section>
+
+    <section id="section5">
+        <h4>Write a JavaScript function that returns a passed string with letters in alphabetical order</h4>
+        <button onclick="alphabetizeStringScript()">Alphabetize String</button>
+        <div id="alphabetizeStringOutput"></div>
+        <script src="Scripts/alphabetizeString.js"></script>
+    </section>
+
+    <section id="section6">
+        <h4>JavaScript function that converts the first letter of each word of the string to uppercase</h4>
+        <button onclick="capitalizeFirstLetterScript()">Capitalize First Letter</button>
+        <div id="capitalizeFirstLetterOutput"></div>
+        <script src="Scripts/capitalizeFirstLetter.js"></script>
+    </section>
+
+    <section id="section7">
+        <h4>Write a JavaScript program to get the current date</h4>
+        <button onclick="getCurrentDateScript()">Get Current Date</button>
+        <div id="currentDateOutput"></div>
+        <script src="Scripts/getCurrentDate.js"></script>
+    </section>
+
+    <section id="section8">
+        <h4>Write a JavaScript program to calculate the number of days left until next Christmas</h4>
+        <button onclick="daysUntilChristmasScript()">Days Until Christmas</button>
+        <div id="daysUntilChristmasOutput"></div>
+        <script src="Scripts/daysUntilChristmas.js"></script>
+    </section>
+
+    <section id="section9">
+        <h4>Write a JavaScript program to sort the items of an array</h4>
+        <button onclick="sortArrayScript()">Sort Array</button>
+        <div id="sortArrayOutput"></div>
+        <script src="Scripts/sortArray.js"></script>
+    </section>
+
+    <section id="section10">
+        <h4>Write a JavaScript function to get the last day of a month</h4>
+        <div id="output10">
+            <button id="lastDayOfMonth">Get Last Day of Month</button>
+            <script src="Scripts/lastDayOfMonth.js"></script>
+        </div>
+    </section>
+
+    <section id="section11">
+        <h4>Write a JavaScript program to calculate age</h4>
+        <div id="output11">
+            <button id="calculateAge">Calculate Age</button>
+            <script src="Scripts/calculateAge.js"></script>
+        </div>
+    </section>
+
+    <section id="section12">
+        <h4>Write a function that takes the age of a person as parameter and returns true if true or ask a confirmation message “Did your parents allow you?”</h4>
+        <div id="checkingAge">
+            <button id="ageCheck">Age Check</button>
+            <script src="Scripts/ageCheck.js"></script>
+        </div>
+    </section>
+
+    <section id="section13">
+        <h4>Write a function min(a,b) which returns the least of two numbers a and b</h4>
+        <div id="minOfTwoNumbers">
+            <button id="minFunction">Find Minimum</button>
+            <script src="Scripts/minFunction.js"></script>
+        </div>
+    </section>
+
+    <section id="section14">
+        <h4>Write a function pow(x,n) that returns x in power n</h4>
+        <div id="output14">
+            <button id="powerFunction">Calculate Power</button>
+            <script src="Scripts/powerFunction.js"></script>
+        </div>
+    </section>
+
+    <section id="section15">
+        <h4>Function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far.</h4>
+        <ul>
+            <li>wins get 3 points</li>
+            <li>draws get 1 point</li>
+            <li>losses get 0 points</li>
+        </ul>
+        <div id="output15">
+            <button id="footballPoints">Calculate Football Points</button>
+            <script src="Scripts/footballPoints.js"></script>
+        </div>
+    </section>
+
+    <section id="section16">
+        <h4>Write a JavaScript function to get time differences in days between two dates</h4>
+        <div id="output16">
+            <button id="dateDifference">Calculate Date Difference</button>
+            <script src="Scripts/dateDifference.js"></script>
+        </div>
+    </section>
+
+    <section id="section17">
+        <h4>Write a function that calculates the ticket price based on age with the following conditions:</h4>
+        <ul>
+            <li>age below 12 pay a ticket price of 5</li>
+            <li>age below 18 pay a ticket price of 10</li>
+            <li>age below 60 pay a ticket price of 20</li>
+            <li>age over 60 play a ticket price of 15</li>
+        </ul>
+        <div id="output17">
+            <button id="ticketPrice">Calculate Ticket Price</button>
+            <script src="Scripts/ticketPrice.js"></script>
+        </div>
+    </section>
+
+</body>
+</html>

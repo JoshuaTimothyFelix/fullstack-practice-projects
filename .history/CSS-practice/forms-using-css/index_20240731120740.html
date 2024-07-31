@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Form Example</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Step 1: Your details</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="First and last name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="example@domain.com">
+        
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Eg. +447500000000">
+    </fieldset>
+    
+    <fieldset>
+        <legend>Step 2: Delivery address</legend>
+        <label for="address">Address</label>
+        <textarea id="address"></textarea>
+        
+        <label for="postcode">Post code</label>
+        <input type="text" id="postcode">
+        
+        <label for="country">Country</label>
+        <input type="text" id="country">
+    </fieldset>
+    
+    <fieldset>
+        <legend>Step 3: Card details</legend>
+        <label>Card type</label>
+        <div class="card-types">
+            <input type="radio" id="visa" name="cardtype">
+            <label for="visa"> <img src="visa.png" alt="VISA"> VISA</label>
+            
+            <input type="radio" id="amex" name="cardtype">
+            <label for="amex"><img src="amex.png" alt="AmEx"> AmEx</label>
+            
+            <input type="radio" id="mastercard" name="cardtype">
+            <label for="mastercard"><img src="mastercard.png" alt="Mastercard"> Mastercard</label>
+        </div>
+        
+        <label for="cardnumber">Card number</label>
+        <input type="text" id="cardnumber">
+        
+        <label for="securitycode">Security code</label>
+        <input type="text" id="securitycode">
+        
+        <label for="cardname">Name on card</label>
+        <input type="text" id="cardname" placeholder="Exact name as on the card">
+    </fieldset>
+    
+    <button type="submit">BUY IT!</button>
+</form>
+
+</body>
+</html>

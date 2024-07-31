@@ -1,0 +1,64 @@
+body {
+    background-color: #CCCC33;
+    color: #800080;
+    font-family: 'Times New Roman', Garamond, serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, th, caption {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar li {
+    display: inline;
+    background-color: #E4E495;
+    padding: 5px 15px;
+    border-right: 2px solid #202077;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #800080;
+}
+
+table {
+    background-color: #E4E495;
+    color: #202077;
+    border: 2px solid #202077;
+    margin-left: 20px; /* x distance from the left margin */
+    margin-right: 20px; /* y distance from the right margin */
+    width: calc(100% - 40px); /* Adjusting width based on margins */
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #B9B931;
+    padding: 10px 20px;
+    border-bottom: 2px solid #202077;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+td.item {
+    background-color: #F0E68C;
+}
+
+/* Add horizontal lines between table rows */
+tr:not(:last-child) {
+    border-bottom: 2px solid #202077;
+}
+
+address {
+    border-top: 2px solid #202077;
+    margin-top: 50px;
+    padding-top: 10px;
+    font-style: normal;
+}
