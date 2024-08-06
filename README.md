@@ -1,3 +1,3 @@
-Fullstack Development Training Projects</br>
+<p style='font-size:40px;'>'Fullstack Development Training Projects</p></br>
 Welcome to my repository where I showcase all my training projects and assignments that I've completed on my journey to mastering fullstack development. Currently, I've completed projects in HTML, CSS, and JavaScript.<br>This repository contains various projects and assignments that I have completed as part of my fullstack development training. The purpose of this repository is to demonstrate my progress and skills in web development.</br>
 If you'd like to contribute to this repository, please fork the repository and create a pull request. Feel free to open issues to discuss any bugs or feature requests.
