@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('../images/bodybg.gif') repeat;
+    background: url('./JavaScript-practice/Few-adv-practice-projects/images/bodybg.gif') repeat;
 }
 
 .container {
