@@ -1,0 +1,31 @@
+Create the design neatly in HTML 
+The following fields should be available on form.
+1.	Salutation (Drop down with following values Mr, Miss, Mrs, Prof, Dr).
+2.	Full Name (max 150 characters)
+3.	Initial (max 10 characters)
+4.	Address (Free text entry)
+5.	Age (text box)
+6.	Height in centimeter (text box)
+7.	Weight in Kilogram (text box)
+8.	Body mass index (Text box – non editable)
+9.	Description (Free text area - non editable)
+There should be a button available on form saying “Calculate BMI”.
+Validation
+On clicking “Calculate BMI” the following validations need to done first
+1.	Salutation is selected
+2.	Full name is entered
+3.	Initial is entered
+4.	Address is entered
+5.	Height should be numeric between 100 and 300.
+6.	Weight should be a numeric value between 25 and 200
+Calculation
+The formula for BMI is
+BMI = Weight in Kilogram / (Height in Meters) 2
+The result should be then shown on body mass index text box.
+Then according to the value of BMI appropriate message need to be shown on description text area from following descriptions
+1.	Underweight Less than 19.1 for women, Less than 20.7 for men
+2.	Ideal weight 19.1 to 25.8 for women, 20.7 to 26.4 for men
+3.	Marginally overweight 25.8 to 27.3 for women, 26.4 to 27.8 for men
+4.	Overweight 27.3 to 32.2 for women, 27.8 to 31.1 for men
+5.	Very overweight or obese 32.3 to 44.8 for women, 31.1 to 45.4 for men
+6.	Extremely obese More than 44.8 for women, More than 45.4 for men
