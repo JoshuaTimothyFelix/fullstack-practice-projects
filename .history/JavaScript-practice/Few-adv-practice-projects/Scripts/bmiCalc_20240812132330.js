@@ -1,12 +1,10 @@
-document.getElementById('bmiForm').addEventListener('submit', formValidation);
-
 document.addEventListener('DOMContentLoaded', function() {
   const salutationSelect = document.getElementById('salutation');
   salutationSelect.addEventListener('change', function() {
       const selectedValue = salutationSelect.value;
       if (selectedValue === "Prof." || selectedValue === "Dr.") {
-          const gender = prompt("Please enter your gender (M for male/F for female):").toLowerCase();
-          if (gender === 'male' || gender === 'female' || gender === 'm' || gender === 'f') {
+          const gender = prompt("Please enter your gender (male/female):").toLowerCase();
+          if (gender === 'male' || gender === 'female') {
               salutationSelect.dataset.gender = gender;
           } else {
               alert("Invalid gender entered. Please select salutation again and enter 'male' or 'female'.");
@@ -30,10 +28,10 @@ function calculateBMI() {
   const bmiField = document.getElementById('bmi');
   const descriptionField = document.getElementById('description');
 
-if (!salutation || !fullName || !initial || !address || !age) {
-    //alert("Please fill in all the required fields.");
-    description = "";
-  } 
+/*   if (!salutation || !fullName || !initial || !address || !age) {
+      alert("Please fill in all the required fields.");
+      return;
+  } */
 
   if (isNaN(height) || height < 100 || height > 300) {
       alert("Height should be a numeric value between 100 and 300 cm.");
@@ -52,7 +50,7 @@ if (!salutation || !fullName || !initial || !address || !age) {
 
   const gender = salutation === "Prof." || salutation === "Dr." ? document.getElementById('salutation').dataset.gender : salutation === "Mr." ? 'male' : 'female';
 
-  if (gender === 'male' || gender === 'm') {
+  if (gender === 'male') {
       if (bmi < 20.7) {
           description = "Underweight";
       } else if (bmi < 26.4) {

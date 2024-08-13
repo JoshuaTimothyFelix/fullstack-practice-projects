@@ -31,8 +31,8 @@ function calculateBMI() {
   const descriptionField = document.getElementById('description');
 
 if (!salutation || !fullName || !initial || !address || !age) {
-    //alert("Please fill in all the required fields.");
-    description = "";
+      //alert("Please fill in all the required fields.");
+      description = "";
   } 
 
   if (isNaN(height) || height < 100 || height > 300) {

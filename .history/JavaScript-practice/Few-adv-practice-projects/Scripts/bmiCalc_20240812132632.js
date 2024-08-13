@@ -1,5 +1,3 @@
-document.getElementById('bmiForm').addEventListener('submit', formValidation);
-
 document.addEventListener('DOMContentLoaded', function() {
   const salutationSelect = document.getElementById('salutation');
   salutationSelect.addEventListener('change', function() {
@@ -30,10 +28,10 @@ function calculateBMI() {
   const bmiField = document.getElementById('bmi');
   const descriptionField = document.getElementById('description');
 
-if (!salutation || !fullName || !initial || !address || !age) {
-    //alert("Please fill in all the required fields.");
-    description = "";
-  } 
+/*   if (!salutation || !fullName || !initial || !address || !age) {
+      alert("Please fill in all the required fields.");
+      return;
+  } */
 
   if (isNaN(height) || height < 100 || height > 300) {
       alert("Height should be a numeric value between 100 and 300 cm.");
